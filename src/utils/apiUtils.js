@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const fetchData = async (url, setData, setLoading, errorMessage) => {
-    setLoading(true);
+    setLoading && setLoading(true);
     try {
         const response = await axios.get(url);
         setData(response.data);
@@ -9,6 +9,6 @@ export const fetchData = async (url, setData, setLoading, errorMessage) => {
         console.error(errorMessage, error);
         alert(errorMessage, error);
     } finally {
-        setLoading(false);
+        setLoading && setLoading(false);
     }
 };

@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')).render(
             <div className="flex min-h-screen flex-col bg-slate-900 text-slate-200">
                 <header className="">
                     <h1 className="flex justify-center p-8 text-3xl text-slate-200">
-                        E-commerece
+                        NIMAP-INFOTECH PROJECT
                     </h1>
                 </header>
                 <main className="flex-grow basis-0">
